@@ -64,3 +64,27 @@ num = 10
 result ='양수'if (num % 2 == 0 ) else '홀수'
 print('10 은', result)
 
+
+
+
+
+# 파이썬 표준 출력
+# 프로그램의 실행결과를 화면(콘솔/터미널)에 출력하는 것을 의미
+# 파이썬에서는 이것을 print()를 통해 수행
+
+print ("Hello, world","!!")
+print ("Hello, world","!!", sep='-')
+print ("Hello, world","!!", sep='-')
+
+
+print('1', end =' ') # 종결문자에 공백지정
+print('2', end =' ')
+print('3', end =' ')
+print('4', end =' ')
+print('5')
+
+
+
+print("objects, sep=' ', end='\n')
+
+
