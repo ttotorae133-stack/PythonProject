@@ -70,3 +70,24 @@ print("\n\n누적합:", total)
 for i in range(3, 101,3):
     print(i, end=' ')
 print()
+
+
+
+
+
+
+
+
+# for 문은 유한한 반복을 염두에 두고 설계
+# 그래도, 무한루프를 만들고 싶다면 iter 함수 이용
+
+import itertools
+for i in itertools.count():
+    if i == 9999999:break
+    print(i, end=' ')
+    i+=1
+print()
+
+
+
+# for (i = 0; i<= 10; ++1)
