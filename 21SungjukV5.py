@@ -2,7 +2,11 @@
 # 학생의 이름, 국어, 영어, 수학 점수를 키보드로 입력받아
 # 총점,평균, 학점을 처리한 뒤 결과 출력
 # 성적처리의 CRUD를 메뉴식으로 구현
-
+sungjuks=[
+    ['혜교', '96.89.99.297.99.99 ','A']
+    ['지현', '99.98.97.297.77.82', 'A']
+    ['수지', '95.77.77.297.67.62', 'A']
+    ]
 menus = f'''
 --------------------
 성적 프로그램 v4
@@ -18,19 +22,18 @@ menus = f'''
 
 header=''''''
 
-for i in range(1,100+1):
-    job=input(menus)
+for i in range(1, 100 + 1):
+    job = input(menus)
 
-#   if   job == '1':print('성적데이터 입력을 진행합니다...')
-#  elif job == '2':print('성적데이터 입력을 진행합니다...')
-#   elif job == '3':print('성적데이터 상세조회를 진행합니다...')
-#   elif job == '4':print('성적데이터 수정을 진행합니다...')
-#   elif job ==  '5':print('성적데이터 삭제를 진행합니다...')
-#   elif job ==  '0':print('성적 프로그램을 종료합니다...')
-#   elif job == '0':
-#        print('성적프로그램을 종료합니다...')
-#   else: print ('번호를 잘못입력하셨습니다!')
-
+    #   if   job == '1':print('성적데이터 입력을 진행합니다...')
+    #  elif job == '2':print('성적데이터 입력을 진행합니다...')
+    #   elif job == '3':print('성적데이터 상세조회를 진행합니다...')
+    #   elif job == '4':print('성적데이터 수정을 진행합니다...')
+    #   elif job ==  '5':print('성적데이터 삭제를 진행합니다...')
+    #   elif job ==  '0':print('성적 프로그램을 종료합니다...')
+    #   elif job == '0':
+    #        print('성적프로그램을 종료합니다...')
+    #   else: print ('번호를 잘못입력하셨습니다!')
 
     match job:
         case '1':
@@ -51,8 +54,6 @@ for i in range(1,100+1):
                    'C' if (avg >= 70) else
                    'D' if (avg >= 60) else 'F')
 
-
-
             tot = kor + eng + mat
             avg = tot / 3
             grd = ('A' if (avg >= 90) else
@@ -60,19 +61,25 @@ for i in range(1,100+1):
                    'C' if (avg >= 70) else
                    'D' if (avg >= 60) else 'F')
 
-
-            sj=[name,kor,eng,mat,tot,avg,grd]
+            sj = [name, kor, eng, mat, tot, avg, grd]
             sungjuks.append(sj)
 
         case '2':
-            result = f'{name:5s} {kor:4d} {eng:4d} {mat:4d} ' \
-                      f'{tot:4d} {avg:.2f} {grd:3s}\n'
+            result = ''
+
+            for name, kor, eng, mat, tot, avg, grd in sungjuks:
+                result = f'{name:5s} {kor:4d} {eng:4d} {mat:4d} ' \
+                     f'{tot:4d} {avg:.2f} {grd:3s}\n'
             print(f'{header}{result}')
 
-        case '3':print('성적데이터 상세조회를 진행합니다...')
-        case '4':print('성적데이터 수정을 진행합니다...')
-        case '5':print ('성적데이터 삭제를 진행합니다...')
+        case '3':
+            print('성적데이터 상세조회를 진행합니다...')
+        case '4':
+            print('성적데이터 수정을 진행합니다...')
+        case '5':
+            print('성적데이터 삭제를 진행합니다...')
         case '0':
-             print('성적프로그램을 종료합니다...')
-             break
-        case _ : print('번호를 잘못입력하셨습니다')
+            print('성적프로그램을 종료합니다...')
+            break
+        case _:
+            print('번호를 잘못입력하셨습니다')
