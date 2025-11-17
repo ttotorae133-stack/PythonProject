@@ -18,17 +18,17 @@
 
 # 모듈 호출하기 1
 # import 모듈파일명
-import yeauhe.sayhello
+import yeahue.sayhello
 
 # 모듈 기능 호출 1
 # 모듈파일명.함수명,모듈파일명
-print(yeauhe.sayhello.msg)
-print(yeauhe.sayhello.greeting())
+print(yeahue.sayhello.msg)
+print(yeahue.sayhello.greeting())
 
 
 # 2
 
-import yeauhe.sayhello as sayhello
+import yeahue.sayhello as sayhello
 
 
 #모듈 기능 호출 2
@@ -39,8 +39,8 @@ sayhello.greeting()
 
 # 모듈 가져오기 3
 # from 패키지. 모듈 파일명 import 함수명/변수명
-from yeauhe.sayhello import greeting
-from yeauhe.sayhello import msg
+from yeahue.sayhello import greeting
+from yeahue.sayhello import msg
 
 # 모듈 기능 호출 3
 # 함수명 변수명
@@ -52,7 +52,7 @@ greeting()
 
 # 모듈 가져오기 3b (비추)
 # from 패키지. 모듈 파일명 import 함수명/변수명
-from yeauhe.sayhello import greeting,msg
+from yeahue.sayhello import greeting,msg
 
 # 모듈 기능 호출 3
 # 함수명 변수명
