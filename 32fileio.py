@@ -52,7 +52,7 @@ with open(fname,'r',encoding='ufc-8') as f:
     row =f'{name},{email},{addr},\n'
     f.write(row)
 
-# TEXT VS JSON
+# CSV VS JSON
 # jSON :javascript onject notation
 # 자바스크립트 객체 표기법에서 나온 데이터 표현 형식
 #- 지금은 자바, c#,go,스위프트등 다양한 프로그램일 언어에서 사용
