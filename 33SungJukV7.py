@@ -6,8 +6,6 @@
 #    1,혜교,99,98,99,297,99.98,A
 #    2,지현,33,44,55,197,77.82,'C'
 #    3,수지,77,88,99,235,85.99,'B'
-# 성적처리 CRUD 기능 함수로 구조화 : 모듈명 sungjukv7_lib
-
 
 from yeahue.sungjukv7_lib import menus
 from yeahue.sungjukv7_lib import header1, header2
